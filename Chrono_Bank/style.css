@@ -1,0 +1,359 @@
+body{
+    background-color: lightgray;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family:"Graphic LC Web";
+    font-size: 12px;
+    font-weight:500;
+    line-height: 12px;
+}  
+.container{
+    display:grid;
+    grid-template-columns:100px 800px;
+    grid-template-rows:72px 800px ;
+
+    grid-template-areas:
+    'sidebar header header'
+    'sidebar main  additional'
+    ;
+    grid-gap:20px 0px;
+    
+}
+
+.header{
+    grid-area:header;
+    background-color:white;
+    display:flex;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(38, 44, 64, 0.15);
+    position: relative;
+}
+.sidebar{
+    grid-area:sidebar;
+    background-color:rgb(4, 4, 136);
+}
+.main{
+    grid-area:main;
+    background-color:lightgray;
+}
+.additional{
+    grid-area:additional;
+    background-color:lightgray ;
+    margin-top:5px;
+}
+input{
+    width:448px;
+    height:32px;
+    border-radius: 2px;
+    border:1px solid #ADB5BD;
+    margin:0px 32px;
+    box-sizing: border-box;
+    padding:0px 10px;
+    outline:none;
+   
+}
+input:hover{
+    border-color:rgb(228, 78, 228);
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.space{
+    margin-left:756px;
+}
+.extra{
+    width:146px;
+}
+.item {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:12px 20px;
+    height:50px;
+    width:50px;
+}
+.logo{
+    margin-bottom:40px;
+}
+.font_black{
+    color:black;
+}
+.font_grey{
+    color:lightslategray;
+}
+.sub_main{
+    background-color: white;
+    margin:0px 32px;
+}
+
+.info{
+    width:432px;
+}
+.info_space{
+    padding:0 50px;
+}
+.info_space::placeholder{
+    color:black;
+}
+
+.search{
+  position:absolute;
+  left:450px;
+  top:28px;
+}
+.visa{
+    position: relative;
+}
+.visa::before{
+    content:'';
+    display:block;
+    height:20px;
+    width:30px;
+    background: url('image/VISA.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    position: absolute;
+    left:40px;
+    top:28px;
+    z-index: 1;
+}
+.visa::after{
+    content:'';
+    display:block;
+    height:11px;
+    width:11px;
+    background: url('image/arrow_down.svg');
+    background-size:11px;
+    left:438px;
+    bottom:10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+.calendar{
+    position: relative;
+}
+.calendar::after{
+    content:'';
+    display:block;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    height:13px;
+    width:13px;
+    background: url('image/Calendar.svg');
+    background-size: 13px;
+    left:435px;
+    bottom:10px;
+}
+.location{
+    position: relative;
+}
+.location::after{
+    content:'';
+    display:block;
+    height:11px;
+    width:11px;
+    background: url('image/Union.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 9px;
+    position: absolute;
+    left:438px;
+    bottom:10px;
+    z-index: 1;
+}
+.type{
+    position: relative;
+}
+.type::after{
+    content:'';
+    display:block;
+    height:15px;
+    width:15px;
+    background: url('image/Type.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:15px;
+    position: absolute;
+    left:435px;
+    bottom:10px;
+    z-index: 1;
+}
+.user{
+    position: relative;
+}
+.user::after{
+    content:'';
+    display:block;
+    height:15px;
+    width:15px;
+    background: url('image/User.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:15px;
+    position: absolute;
+    left:435px;
+    bottom:10px;
+    z-index: 1;
+}
+.instr{
+    font-family: "Graphic LC Web";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: #212130;
+    margin:10px 32px;
+}
+.sub_text{
+    display:flex;
+    align-items: center;
+    width:439px;
+    margin: 20px 32px;
+    
+
+}
+.text_instr{
+    font-family: "Graphic LC Web";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #17139C;
+    margin-right:16px;
+
+}
+button{
+    margin:20px 30px;
+    border:none;
+    padding: 10px 32px;
+    border-radius: 2px;
+}
+.blue{
+    background: #7f7bdd;
+    color:white;
+}
+.gray{
+    background-color: rgb(202, 198, 198);
+    color:#17139C;
+}
+.second{
+    padding-top: 16px;
+    padding-bottom:36px;
+    width:688px;
+    background-color: white;
+}
+.title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.color_gray{
+    font-family: "Graphic LC Web";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color:gray;
+    width:104px;
+}
+.color_black{
+    font-family:" Graphic LC Web";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color:black;
+    width:232px;
+}
+.number_black{
+    color:black;
+    font-family: "Graphic LC Web";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+.number_gray{
+    color:gray;
+    font-family: "Graphic LC Web";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+.prescription{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.element{
+    margin:0px 16px;
+}
+.element_number{
+    width:104px;
+}
+.pic{
+    height: 24px;
+    width:24px;
+    margin:4px 0px
+}
+.presc_details{
+    margin:16px 16px;
+}
+.date{
+    font-family: "Graphic LC Web";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px; 
+    color: #17139C;
+    padding:0px 16px;
+}
+.days{
+    display: flex;
+    align-items: center;
+    font-family: "Graphik LC Web";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color: #212130;
+
+}
+.round_red{
+    height:8px;
+    width:8px;
+    border:3px solid red;
+    border-radius:50%;
+
+}
+.round_blue{
+    width:16px;
+    height:16px;
+    border: 2px solid #17139C;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+}
+span{
+    margin:0px 6px;
+}
+.one{
+    margin-left:16px;
+}
+.days_space{
+    padding:0px 16px;
+}
